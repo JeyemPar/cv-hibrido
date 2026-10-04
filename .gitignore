@@ -1,0 +1,7 @@
+﻿cv_flutter_wrapper/build/
+cv_flutter_wrapper/.dart_tool/
+cv_flutter_wrapper/.flutter-plugins
+cv_flutter_wrapper/.flutter-plugins-dependencies
+cv_flutter_wrapper/android/.gradle/
+cv_flutter_wrapper/android/local.properties
+resultados_medicion.txt

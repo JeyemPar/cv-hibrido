@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de vida de John Michael Paredes López">
+  <title>CV · John Michael Paredes López</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Encabezado: datos personales ===== -->
+  <header class="cabecera" id="inicio">
+    <img class="foto" src="foto.jpeg" alt="Fotografía de John Michael Paredes López">
+    <div>
+      <h1>John Michael Paredes López</h1>
+      <p class="cargo">Desarrollador / Gestor Técnico</p>
+      <div class="contacto-rapido">
+        <a class="btn" href="tel:0998960808">📞 Llamar</a>
+        <a class="btn" href="mailto:Michaelparedes1994@hotmail.com">✉️ Correo</a>
+        <a class="btn btn-borde" href="https://github.com/JeyemPar">💻 GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Navegación por botones ===== -->
+  <nav class="menu" aria-label="Secciones del CV">
+    <a href="#perfil">Perfil</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#idiomas">Idiomas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- Perfil profesional -->
+    <section id="perfil" class="seccion">
+      <h2>Perfil profesional</h2>
+      <p>Estudiante de sexto nivel de Ingeniería en Computación (UPEC) y técnico gestor de
+        proyectos comunitarios. Busco consolidar mis habilidades técnicas en desarrollo de
+        software y gestión tecnológica, aportando con soluciones eficientes, organizadas y
+        enfocadas en el impacto positivo.</p>
+    </section>
+
+    <!-- Experiencia (desplegables) -->
+    <section id="experiencia" class="seccion">
+      <h2>Experiencia profesional</h2>
+
+      <article class="item">
+        <button class="item-cabecera" aria-expanded="false">
+          <span>
+            <small>Junio 2026 – Actual</small>
+            <strong>Desarrollador Full-Stack</strong>
+            <em>Proyectos Internos</em>
+          </span>
+          <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="item-detalle">
+          <ul>
+            <li>Desarrollo Full-Stack del "Sistema_ONG_new".</li>
+            <li>Implementación de soluciones con C#, ASP.NET MVC, Entity Framework y SQL Server.</li>
+            <li>Diseño de la lógica para la asignación de voluntarios a campañas específicas.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="item">
+        <button class="item-cabecera" aria-expanded="false">
+          <span>
+            <small>Marzo 2026 – Mayo 2026</small>
+            <strong>Gestión Técnica de Talleres</strong>
+            <em>Albita Arte Creativo</em>
+          </span>
+          <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="item-detalle">
+          <ul>
+            <li>Gestión de talleres comunitarios de pintura en madera y corte láser CNC en MDF.</li>
+            <li>Coordinación con la instructora Alba López para asegurar la calidad de las entregas.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos destacados</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <small>Mayo 2026</small>
+          <h3>Hackathon "DeVaca" 🥉</h3>
+          <p>Modelo de datos y pitch para una feature fintech. Tercer lugar.</p>
+        </article>
+        <article class="tarjeta">
+          <small>Mayo 2026</small>
+          <h3>Identidad visual "MORTAL KODE"</h3>
+          <p>Gestión del proyecto de branding para un equipo universitario.</p>
+        </article>
+        <article class="tarjeta">
+          <small>Abril 2026</small>
+          <h3>Software de visión artificial</h3>
+          <p>App con filtros de imagen y transformadas de Fourier / Walsh-Hadamard.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formación -->
+    <section id="formacion" class="seccion">
+      <h2>Formación</h2>
+      <article class="tarjeta">
+        <small>Septiembre 2023 – Enero 2028</small>
+        <h3>Universidad Politécnica Estatal del Carchi (UPEC)</h3>
+        <p>Ingeniería en Computación (sexto nivel)</p>
+      </article>
+      <article class="tarjeta">
+        <small>Junio 2012</small>
+        <h3>Bachiller Técnico</h3>
+        <p>Electrónica de Consumo</p>
+      </article>
+    </section>
+
+    <!-- Habilidades con filtro -->
+    <section id="habilidades" class="seccion">
+      <h2>Habilidades técnicas</h2>
+      <div class="filtros" role="group" aria-label="Filtrar habilidades">
+        <button class="chip activo" data-filtro="todas">Todas</button>
+        <button class="chip" data-filtro="desarrollo">Desarrollo</button>
+        <button class="chip" data-filtro="datos">Datos y modelado</button>
+        <button class="chip" data-filtro="sistemas">Sistemas</button>
+        <button class="chip" data-filtro="otros">Otros</button>
+      </div>
+      <ul class="habilidades">
+        <li data-cat="desarrollo">Java</li>
+        <li data-cat="desarrollo">Spring Boot</li>
+        <li data-cat="desarrollo">Python</li>
+        <li data-cat="desarrollo">Django</li>
+        <li data-cat="desarrollo">C# / .NET</li>
+        <li data-cat="desarrollo">ASP.NET MVC</li>
+        <li data-cat="desarrollo">Entity Framework</li>
+        <li data-cat="datos">SQL Server</li>
+        <li data-cat="datos">MySQL Workbench</li>
+        <li data-cat="datos">PlantUML</li>
+        <li data-cat="datos">Mermaid</li>
+        <li data-cat="sistemas">Linux (CentOS, Debian, Mint)</li>
+        <li data-cat="sistemas">Git</li>
+        <li data-cat="otros">Visión por computador (Hough)</li>
+        <li data-cat="otros">LOPDP ecuatoriana</li>
+      </ul>
+    </section>
+
+    <!-- Idiomas y otros datos -->
+    <section id="idiomas" class="seccion">
+      <h2>Idiomas</h2>
+      <div class="idioma">
+        <span>Español <small>Nativo</small></span>
+        <div class="barra"><div style="width:100%"></div></div>
+      </div>
+      <div class="idioma">
+        <span>Inglés <small>Medio</small></span>
+        <div class="barra"><div style="width:50%"></div></div>
+      </div>
+      <h3 class="subtitulo">Otros datos</h3>
+      <p>🚗 Conductor profesional con licencia tipo C.</p>
+    </section>
+
+    <!-- Contacto con validación -->
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name">
+        <span class="error" id="error-nombre"></span>
+
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" autocomplete="email">
+        <span class="error" id="error-correo"></span>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <span class="error" id="error-mensaje"></span>
+
+        <button type="submit" class="btn btn-ancho">Enviar mensaje</button>
+        <p class="ok" id="form-ok" hidden>✅ Datos válidos. Se abrirá tu app de correo.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 John Michael Paredes López · <a href="#inicio">Volver arriba ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
